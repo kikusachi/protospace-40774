@@ -1,0 +1,10 @@
+<div class="main">
+  <div class="inner">
+    <div class="form__wrapper">
+      <h2 class="page-heading">プロトタイプ編集</h2>
+      <%# 部分テンプレートでフォームを表示する %>
+      <%# locals: { prototype: @prototype }→ここで使えるprototype変数を渡した先のファイル(_form.html.erb)でも@prototype使えるようにしている %>
+      <%= render partial: "form", locals: { prototype: @prototype } %>
+    </div>
+  </div>
+</div>
